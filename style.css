@@ -60,6 +60,7 @@ main>i{
 }
 
 #sports>h1 {
+    margin: 50px 0;
     font-family: "Poppins", sans-serif;
     color: var(--text-color);
     font-size: 24px;
