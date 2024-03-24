@@ -28,7 +28,7 @@ main {
 
 #sports>h1 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.73vw;
+    font-size: 24px;
     font-weight: 700;
     width: fit-content;
     border-bottom: 2px solid #738FFF;
@@ -73,6 +73,7 @@ main {
     justify-content: space-between;
     background-color: #F7F7F8;
 }
+
 .card>.cardInner>.dets>h3 {
     text-transform: capitalize;
     color: #525965;
@@ -135,42 +136,48 @@ main {
 }
 
 
-#second{
+#second {
     width: 100%;
     height: 100%;
-    padding: 2.5vw 10vw;
+    /* padding: 2.5vw 10vw; */
+    display: flex;
+    justify-content: center;
 }
 
-#secondContainer{
-    background-image: linear-gradient(to bottom, #f3f1fe , #e8f3fe);
-    /* background-color: red; */
-    padding: 4vw 0;
-    display: flex;          
+#secondContainer {
+    background-image: linear-gradient(to bottom, #f3f1fe, #e8f3fe);
+    /* min-width: 1200px; */
+    padding: 5vw;
+    width: 80vw;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2vw;
 }
 
-#secondContainer>h2{
+#secondContainer>h2 {
     font-family: "Poppins", sans-serif;
     font-size: 50px;
     font-weight: 700;
 }
-#secondContainer>p{
+
+#secondContainer>p {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
 }
-#secondContainer>.cardSwipper{
+
+#secondContainer>.cardSwipper {
     /* background-color: red; */
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 2vw;
 }
-#secondContainer>.cardSwipper>.cardcontainer{
-    width: 37%;
+
+#secondContainer>.cardSwipper>.cardcontainer {
+    width: 840px;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -178,10 +185,12 @@ main {
     overflow-y: auto;
     /* background-color: yellow; */
 }
-#secondContainer>.cardSwipper>.cardcontainer::-webkit-scrollbar{
+
+#secondContainer>.cardSwipper>.cardcontainer::-webkit-scrollbar {
     display: none;
 }
-#secondContainer>.cardSwipper>.icon{
+
+#secondContainer>.cardSwipper>.icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,12 +198,14 @@ main {
     width: 36.75px;
     height: 49px;
 }
-#secondContainer>.cardSwipper>.icon>i{
+
+#secondContainer>.cardSwipper>.icon>i {
     font-size: 25px;
     font-weight: 500;
     color: #2C9CF0;
 }
-#secondContainer>.cardSwipper>.cardcontainer>.secCard{
+
+#secondContainer>.cardSwipper>.cardcontainer>.secCard {
     position: relative;
     width: 257px;
     padding: 12px;
@@ -204,9 +215,9 @@ main {
     align-items: center;
     gap: 10px;
     box-shadow: 0px 4px 8px 0px #2525250d;
-} 
+}
 
-.secCard::before{
+.secCard::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -217,7 +228,8 @@ main {
     left: -5px;
     rotate: 90deg;
 }
-.secCard::after{
+
+.secCard::after {
     content: '';
     position: absolute;
     width: 20px;
@@ -228,41 +240,102 @@ main {
     right: -5px;
     rotate: -90deg;
 }
-#secondContainer>.secCard>.border{
+
+#secondContainer>.secCard>.border {
     width: 211px;
 }
-#secondContainer .secCard .innerDets{
-   /* background-color: red; */
-   margin-top: -6px;
-   padding-top: 20px;
-   border-top: 2px dashed #A9ACB2;
+
+#secondContainer .secCard .innerDets {
+    /* background-color: red; */
+    margin-top: -6px;
+    padding-top: 20px;
+    border-top: 2px dashed #A9ACB2;
 
 }
-#secondContainer .secCard .innerDets>h3{
+
+#secondContainer .secCard .innerDets>h3 {
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 17px;
     font-weight: 500;
     margin: 5px 0;
 }
-#secondContainer .secCard .innerDets>h4{
+
+#secondContainer .secCard .innerDets>h4 {
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
     margin: 5px 0;
 }
-#secondContainer .secCard .innerDets>p{
+
+#secondContainer .secCard .innerDets>p {
     text-align: center;
     font-size: 14px;
     font-weight: 400;
     margin: 5px 0;
 }
-#secondContainer>.cardSwipper>.cardcontainer>.secCard>button{
+
+#secondContainer>.cardSwipper>.cardcontainer>.secCard>button {
     width: 213px;
     height: 36px;
     color: #fff;
     font-style: 15.41px;
     font-weight: 500;
     background: #1D1D1F;
+}
+
+
+
+@media (max-width: 1302px) {
+    #secondContainer>h2 {
+        font-size: 40px;
+    }
+
+    #secondContainer>p {
+        font-size: 12px;
+    }
+
+    #secondContainer>.cardSwipper>.cardcontainer {
+        width: 560px;
+    }
+}
+
+@media (max-width: 900px) {
+    #secondContainer>h2 {
+        font-size: 35px;
+    }
+    #secondContainer>.cardSwipper {
+        gap: 5vw;
+    }
+    #secondContainer>.cardSwipper>.cardcontainer {
+        width: 272px;
+    }
+}
+
+@media (max-width: 543px) {
+    #secondContainer {
+        width: 100vw;
+    }
+    #secondContainer>h2 {
+        font-size: 20px;
+    }
+    #secondContainer>p {
+        margin: 10px 0;
+        font-size: 10px;
+    }
+    #secondContainer>.cardSwipper {
+        gap: 2vw;
+    }
+    #secondContainer>.cardSwipper>.icon {
+        width: 25.75px;
+        height: 35px;
+    }
+    #secondContainer>.cardSwipper>.icon>i {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #secondContainer>.cardSwipper>.cardcontainer {
+        width: 260px;
+    }
 }
