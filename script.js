@@ -19,8 +19,8 @@ scrollContainer.addEventListener("wheel", (dets) => {
     scrollContainer.scrollLeft += dets.deltaY;
 });
 nextBtn.addEventListener("click", (dets) => {
-    scrollContainer.scrollLeft += 400;
+    scrollContainer.scrollLeft += 800;
 });
 backBtn.addEventListener("click", (dets) => {
-    scrollContainer.scrollLeft -= 400;
+    scrollContainer.scrollLeft -= 800;
 });
