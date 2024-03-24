@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+#sports {
+    /* background-color: red; */
+    width: 100%;
+    padding: 2.5vw 10vw;
+}
+
+#sports>h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.73vw;
+    font-weight: 700;
+    width: fit-content;
+    border-bottom: 2px solid #738FFF;
+}
+
+#sports>.cardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 2vw 0;
+}
+
+#sports>.cardContainer>.card {
+    background-color: #ffff;
+    width: 238.53px;
+    height: 511px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0px 4px 8px 0px #0000000D;
+}
+
+.card>img {
+    width: 100%;
+}
+
+.card>h2 {
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.card>.cardInner {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F8;
+}
+.card>.cardInner>.dets>h3 {
+    text-transform: capitalize;
+    color: #525965;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.card>.cardInner>.dets>h4 {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+#lastCard {
+    position: relative;
+}
+
+#lastCard>h5 {
+    color: #fff;
+    background-color: #000000;
+    padding: 3px 15px;
+    font-size: 12.8px;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#lastCard>h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#lastCard>p {
+    color: #525965;
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+
+
+#sports>.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+
+#sports>.btn>button {
+    width: 124.8px;
+    height: 46px;
+    background-color: #2C9CF0;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+#second{
+    width: 100%;
+    height: 100%;
+    padding: 2.5vw 10vw;
+}
+
+#secondContainer{
+    background-image: linear-gradient(to bottom, #F9F8FF , #F3F9FF);
+    /* background-color: red; */
+    padding: 2.5vw 0;
+    display: flex;          
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+#secondContainer>h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+#secondContainer>p{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+#secondContainer>.cardcontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    /* background-color: yellow; */
+}
+/* #secondContainer>.cardcontainer::before{
+    content: "";
+    border: 1px solid #2C9CF0;
+    width: 36.75px;
+    height: 49px;
+    margin-right: 2vw;
+} */
+#secondContainer>.cardcontainer>.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2C9CF0;
+    width: 36.75px;
+    height: 49px;
+    margin-left: 2vw;
+}
+#secondContainer>.cardcontainer>.icon>i{
+    font-size: 25px;
+    font-weight: 500;
+    color: #2C9CF0;
+}
+#secondContainer>.cardcontainer>.secCard{
+    position: relative;
+    width: 257px;
+    padding: 12px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 4px 8px 0px #2525250d;
+} 
+
+.secCard::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: #d9d9d95e;
+    top: 445px;
+    left: -5px;
+    rotate: 90deg;
+}
+.secCard::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: #d9d9d95e;
+    top: 445px;
+    right: -5px;
+    rotate: -90deg;
+}
+#secondContainer>.secCard>.border{
+    width: 211px;
+}
+#secondContainer .secCard .innerDets{
+    border-top: 2px solid #00000000;
+
+}
+#secondContainer .secCard .innerDets>h3{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+#secondContainer .secCard .innerDets>h4{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+#secondContainer .secCard .innerDets>p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+#secondContainer>.cardcontainer>.secCard>button{
+    width: 213px;
+    height: 36px;
+    color: #fff;
+    font-style: 15.41px;
+    font-weight: 500;
+    background: #1D1D1F;
+}
