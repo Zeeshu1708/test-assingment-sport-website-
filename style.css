@@ -344,6 +344,10 @@ main>i{
 }
 
 @media (max-width: 900px) {
+    main>i{
+        top: 20px;
+        right: 20px;
+    }
     #secondContainer>h2 {
         font-size: 35px;
     }
@@ -356,6 +360,10 @@ main>i{
 }
 
 @media (max-width: 543px) {
+    main>i{
+        top: 10px;
+        right: 10px;
+    }
     #secondContainer {
         width: 100vw;
     }
